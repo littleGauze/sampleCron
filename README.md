@@ -2,7 +2,7 @@
  一个基于 meteor 的定时任务小框架
 ------
 
-###example
+### example
 
 task params
 
@@ -23,7 +23,7 @@ task params
         }
     }
 ```
-##注意
+## 注意
 1. 所有的定时任务配置放到 settings.timer下
 2. checkCfg 可接受 字符串或者字符串数组
 3. checkCfg 中检查的配置参数会作为schedule和job方法的第一个参数传入函数中
