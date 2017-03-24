@@ -10,8 +10,8 @@ task params
     export default function ({}) {
         return {
             name: 'test cron',  //定时任务名称
-            checkCfg: 'testTimer',  //【必须】settings 中定时任务的配置参数 如checkAt 等等，检查的配置会作为schedule和job方法的第一个参数传入
-            schedule: function ({testTimer: {checkAt}}) { //可选参数，默认以配置中的checkAt作为该参数
+            checkCfg: 'testTimer',  //【必须】定时任务参数检查
+            schedule: function ({testTimer: {checkAt}}) { //可选参数，默认以配置中的checkAt作为该参数
                 return checkAt;
             },
             job: function ({testTimer}) { //定时任务逻辑
@@ -23,3 +23,7 @@ task params
         }
     }
 ```
+##注意
+1. 所有的定时任务配置放到 settings.timer下
+2. checkCfg 可接受 字符串或者字符串数组
+3. checkCfg 中检查的配置参数会作为schedule和job方法的第一个参数传入函数中
