@@ -1,0 +1,9 @@
+{
+  "public": {
+  },
+  "timer": {
+    "testTimer": {
+      "checkAt": "at 15:56"
+    }
+  }
+}

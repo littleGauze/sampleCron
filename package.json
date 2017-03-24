@@ -1,0 +1,9 @@
+{
+  "name": "sampleCron",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+  }
+}
