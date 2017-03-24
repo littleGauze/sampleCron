@@ -24,6 +24,6 @@ task params
     }
 ```
 ## 注意
-1. 所有的定时任务配置放到 settings.timer下
-2. checkCfg 可接受 字符串或者字符串数组
-3. checkCfg 中检查的配置参数会作为schedule和job方法的第一个参数传入函数中
+1. 所有的定时任务配置放到 `settings.timer`下
+2. `checkCfg` 可接受 字符串或者字符串数组
+3. `checkCfg` 中检查的配置参数会作为`schedule`和`job`方法的第一个参数传入函数中
